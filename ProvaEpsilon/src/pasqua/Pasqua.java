@@ -1,7 +1,8 @@
-/**Programma per il calcolo della data della pasqua
+/**
+ * Programma per il calcolo della data della pasqua
  * sì... è un argomento che mi piace!
  */
-package provaepsilon;
+package pasqua;
 
 public class Pasqua {
 	private int anno;
@@ -20,7 +21,7 @@ public class Pasqua {
 			this.anno = anno;
 		}
 		else {
-			anno = 1583;		/**Solo le date del calendario gregoriano sono valide*/
+			this.anno = 1583;		/**Solo le date del calendario gregoriano sono valide*/
 		}
 	}
 	@SuppressWarnings("null")
