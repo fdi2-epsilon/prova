@@ -1,4 +1,8 @@
-Spreadsheets application heavily (if not completely based) on `org.stairwaybook.scells`
-from Programming in Scala, M. Odersky, L. Spoon and B. Venners.
+## Spreadsheet
+A *simple* spreadsheets application heavily (if not completely based) on `org.stairwaybook.scells`
+from *Programming in Scala, M. Odersky, L. Spoon and B. Venners*.
 
-For any copyright infringement please contact me immediately.
+![Screenshot](misc/screen01.png?raw=true)
+
+Copyright infringement? Contact me immediately, sorry for any inconvenience.
+
