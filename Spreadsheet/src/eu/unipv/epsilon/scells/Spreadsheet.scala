@@ -1,6 +1,7 @@
 package eu.unipv.epsilon.scells
 
-import scala.swing._
+import swing._
+import event._
 
 class Spreadsheet(val height: Int, val width: Int) extends ScrollPane {
 
@@ -12,6 +13,11 @@ class Spreadsheet(val height: Int, val width: Int) extends ScrollPane {
     autoResizeMode = Table.AutoResizeMode.Off
     showGrid = true
     gridColor = new java.awt.Color(150, 150, 150)
+
+    reactions += {
+      case TableUpdated(table, rows, column) =>
+        for (row <- rows) cells(row)(column).formula = FormulaParsers.parse(userData(row, column))
+    }
 
     override def rendererComponent(isSelected: Boolean, focused: Boolean, row: Int, column: Int): Component =
       if (focused) new TextField(userData(row, column))
