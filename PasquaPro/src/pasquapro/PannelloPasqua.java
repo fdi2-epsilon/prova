@@ -13,7 +13,8 @@ import provaepsilon.Pasqua;
  *
  * @author Luca
  */
-public class PannelloPasqua extends JPanel{
+public class PannelloPasqua extends JPanel {
+
     JTextArea input = new JTextArea();
     JTextArea output = new JTextArea();
     JButton calcola = new JButton("Calcola");
@@ -21,21 +22,21 @@ public class PannelloPasqua extends JPanel{
     JLabel lblRes = new JLabel("Risultato: ");
     JButton fanet = new JButton("Nuovo");
     
-    public PannelloPasqua() throws Exception{
-    super();
-    add(lbl1);
-    add(input);
-    add(lblRes);
-    add(output);
-    add(calcola);
-    add(fanet);
-    setLayout(new GridLayout(5, 2));
-    stampaData();
-    cancella();
+    public PannelloPasqua() throws Exception {
+        super();
+        add(lbl1);
+        add(input);
+        add(lblRes);
+        add(output);
+        add(calcola);
+        add(fanet);
+        setLayout(new GridLayout(5, 2));
+        stampaData();
+        cancella();
     }
+
     public void stampaData(){
         calcola.addActionListener(new ActionListener() {
-
             @Override
             public void actionPerformed(ActionEvent e) {
                 String annoS = input.getText();
@@ -45,9 +46,9 @@ public class PannelloPasqua extends JPanel{
             }
         });
     }
+
     public void cancella(){
         fanet.addActionListener(new ActionListener() {
-
             @Override
             public void actionPerformed(ActionEvent e) {
                 input.setText("");
@@ -55,4 +56,5 @@ public class PannelloPasqua extends JPanel{
             }
         });
     }
+
 }

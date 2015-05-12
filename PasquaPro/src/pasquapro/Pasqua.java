@@ -4,6 +4,7 @@
 package provaepsilon;
 
 public class Pasqua {
+
 	private int anno;
 	
 	public Pasqua(int anno) {
@@ -23,6 +24,7 @@ public class Pasqua {
 			anno = 1583;		/**Solo le date del calendario gregoriano sono valide*/
 		}
 	}
+
 	@SuppressWarnings("null")
 	public int[] calcolaData(){
 		int a = anno%19;	
@@ -45,5 +47,6 @@ public class Pasqua {
 		data[1] = n;
 		return data;
 	}
+
 }
 
